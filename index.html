@@ -1,0 +1,302 @@
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-P9W6574');</script>
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://www.coronakarnataka.in"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" href="favicon.jpg"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:Title" content="Covid-19 Karnataka">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://www.coronakarnataka.in">
+		<meta property="og:description" content="Analytics of Covid-19 pandemic disease in Karnataka /ಕರ್ನಾಟದಲ್ಲಿ ಕೋವಿಡ್-19 ಸಾಂಕ್ರಾಮಿಕ ಕಾಯಿಲೆಯ ವಿಶ್ಲೇಷಣೆ">
+		<meta property="og:determiner" content="Analytics of Covid-19 pandemic disease in Karnataka">
+		<meta property="og:site_name" content="Covid-19 Karnataka">
+		<meta property="keywords" content="karnataka, confirmed	,active, death, media, bulletins, official, covid19, karnataka, corona, pandemic, disease">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- javascript plugin files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <script src="https://use.fontawesome.com/e1573cf1ac.js"></script>
+    
+
+    <!-- css plugins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/mobile/m-index.css">
+
+
+   <!-- javascript -->
+   <script src="js/chart.js"></script>
+   <script src="js/index.js"></script>
+   <script src="js/indiadata.js"></script>
+   <script src="js/news.js"></script>
+   
+  
+
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P9W6574"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="android-title mdl-layout-title">
+            <img class="android-logo-image" src="images/logo.svg">
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+          
+          <!-- Navigation -->
+         <div class="android-navigation-container">
+           <nav class="android-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase " href="#">Dashboard</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="covid.html">What is Covid-19</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="analytics.html">Analytics</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="about.html">About us</a>
+            </nav>
+          </div>
+          <span class="android-mobile-title mdl-layout-title">
+            <img class="android-logo-image" src="images/logo.svg">
+          </span>
+        </div>
+      </div>
+      <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="android-logo-image" src="images/logo-white.svg">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link side-text" href="#">Dashboard</a>
+          <a class="mdl-navigation__link side-text" href="covid.html">What is Covid-19</a>
+          <a class="mdl-navigation__link side-text" href="analytics.html">Analytics</a>
+          <a class="mdl-navigation__link side-text" href="about.html">About us</a>
+        </nav>
+      </div>
+      <div class="android-content mdl-layout__content">
+        <section class= "main-section">
+          <h5 class="m-sec-title">COVID-19 > KARNATAKA ANALYTICS</h5>
+          <h6 class="m-sec-time" id="last-updated"></h6>
+         
+          <div class="d-main">
+            <div class="d1">
+              <div class="d1-sub">
+                <div class="flag">
+                  <img class="map-name-flag" src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Karnataka.svg">
+                  <h5 class="map-text">KARNATAKA TOTAL OVERVIEW</h5>
+                </div>
+              </div>
+
+              
+             
+              <div class="total-cou">
+                <div class="tb1">
+                  <div class="tb7">
+                    <h5 class="sb1" id="k-confirmed"></h5>
+                    <h5 class="sb2">CONFIRMED</h5>
+                    <h5 class="sb3" id="new-c"></h5>
+                  </div>
+                </div>
+                <div class="tb1">
+                  <div class="tb7">
+                    <h5 class="sb4" id ="k-active"></h5>
+                    <h5 class="sb5">RECOVERED</h5>
+                    <h5 class="sb6" id="new-r"></h5>
+                  </div>
+                </div>
+                <div class="tb1">
+                  <div class="tb7">
+                    <h5 class="sb7" id="k-deaths"></h5>
+                    <h5 class="sb8">DEATHS</h5>
+                    <h5 class="sb9" id="new-d"></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d2">
+              <div class="rate">
+                <div class="flag">
+                  <h5 class="map-text"  id="rec-rate">KARNATAKA RECOVERY RATE</h5>
+                </div>
+                <div id="f_rate" style="width: 98%; height: 80%;">
+                </div>
+              </div>
+            </div>
+            <div class="d3">
+              <div class="rate">
+                <div class="flag">
+                  <h5 class="map-text" id="fat-rate">KARNATAKA FATALITY RATE</h5>
+                </div>
+                <div id="r_rate" style="width: 99%; height: 80%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <section class="cvy">
+
+            <iframe width="100%" height="500" 
+            src="https://www.youtube.com/embed/Y9VgmhxtJFk?rel=0" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </section>
+
+
+          <section class="gr">
+            <h2 class="n-text">GRAPHICAL VIEW OF DAILY ANALTICS</h2> 
+            <div class="d-main">
+             
+              <div class="g1" >
+                
+                <canvas id="myChart" class="g1-c"></canvas>
+        
+              </div>
+              <div class="g2">
+                <canvas id="myChart2" class="g2-c"></canvas>
+              </div>
+            
+            </div>
+
+          </section>
+
+
+          <section class="ns">
+            <h2 class="n-text">LATEST WORLD WIDE NEWS</h2>  
+            <div class="d-main">
+              <div class="d21">
+            
+                 
+                <div class="n-main">
+                  <div id="news" >
+                  </div>
+                  <!-- <div class="n1">
+                    <div class="nf">
+                      <div class="nc">
+                        <h5 class="htitle">NEWS HEADLINES</h5>
+                        <span class="hmeta">metadata</span>
+                        <h5 class="hdesc">hvuohorvoe</h5>       
+                        <a class="nlink" style="cursor: pointer;" href="https://google.com" target="_blank">View Full Coverage</a>
+                      </div>
+                      <div class="ni">
+                        <img class="nimg" src="https://static.toiimg.com/thumb/resizemode-4,width-300,height-200,msid-80134802/80134802.jpg?imgsize=986617">
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                
+              </div>
+              
+              <div class="d23">
+                <div class="d1-sub">
+                  <div class="flag">
+                    <img class="map-name-flag" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/800px-Flag_of_India.svg.png">
+                    <h5 class="map-text">INDIA TOTAL OVERVIEW</h5>
+                  </div>
+                </div>
+
+                <div class="ind-total-cou" >
+                  <div class="tb1">
+                    <div class="tb7">
+                      <h5 class="sb1" id="tic">7899</h5>
+                      <h5 class="sb2">CONFIRMED</h5>
+                      
+                    </div>
+                  </div>
+                  <div class="tb1">
+                    <div class="tb7">
+                      <h5 class="sb4" id="tir">7899</h5>
+                      <h5 class="sb5">RECOVERED</h5>
+                     
+                    </div>
+                  </div>
+                  <div class="tb1">
+                    <div class="tb7">
+                      <h5 class="sb7"id="tid">7899</h5>
+                      <h5 class="sb8">DEATHS</h5>
+                  
+                    </div>
+                  </div>
+    
+    
+               
+              </div>
+
+
+              <div class="india-stats">
+            
+          
+                <table class="table-auto w-full">
+                  <thead class="text-xs leading-tight border-b-2">
+                    <tr>
+                      <th class="border px-2 py-2">States</th> 
+                      <th class="border px-1 py-2">Confirmed</th> 
+                      <th class="border px-1 py-2">Recovered</th> 
+                      <th class="border px-1 py-2">Death</th>
+                    </tr>
+                        </thead> 
+                        <tbody class="font-bold">
+                          
+                          <tbody id="sta"></tbody>
+
+                    
+
+                      
+
+
+</tbody>
+</table>
+
+</div>
+
+            </div>
+            </div><br><br>
+            </div>
+        
+            </section>
+
+
+
+
+        </section>
+
+      </div>
+    </div>
+
+
+
+
+    
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>

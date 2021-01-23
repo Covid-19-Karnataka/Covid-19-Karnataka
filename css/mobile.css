@@ -1,0 +1,8 @@
+@media all and (max-width: 600px) 
+{
+.android-header .mdl-layout__drawer-button {
+  background: transparent;
+  visibility: visible;
+  color: #767777;
+}
+}

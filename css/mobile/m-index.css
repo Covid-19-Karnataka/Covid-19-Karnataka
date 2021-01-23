@@ -1,0 +1,183 @@
+@media all and (max-width: 600px) 
+{
+.android-header .mdl-layout__drawer-button {
+  background: transparent;
+  visibility: visible;
+  color: #767777;
+}
+
+.main-section
+{
+  width: 94%;
+}
+
+
+.n1
+{
+  width: 95%;
+  height: fit-content;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+  margin-bottom:15px;
+  display: block;
+  padding:10px;
+  
+}
+.d-main
+{
+  width: 100%;
+  height: fit-content;
+  display: inline;
+
+}
+
+.nimg
+{
+
+  width: 100%;
+  height: auto;
+  vertical-align: right;
+}
+
+
+
+.d1
+{
+  width: 100%;
+  height: 140px;
+  margin-top: 10px;
+}
+
+
+.d2
+{
+  width: 100%;
+  height: 130px;
+  margin-top: 10px;
+
+}
+
+.d3
+{
+  width: 100%;
+  height: 130px;
+  margin-top: 10px;
+}
+
+.ns
+{
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+
+}
+
+.nlist
+{
+  width: 100%;
+  height: 260px;
+  background-color: crimson;
+}
+
+.slist
+{
+  width: 100%;
+  height: 260px;
+  background-color: darkgoldenrod;
+}
+
+
+.d21
+{
+  width: 100%;
+  height: fit-content;
+  display: inline-block;
+}
+
+
+.d23
+{
+  width: 100%;
+  height: fit-content;
+  border: #a7a7a7 solid 1px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.n-text
+{
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgb(0, 125, 134);
+  font-size: large;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 600;
+  line-height: normal;
+}
+
+
+.n-t
+{
+  width: 69%;
+  height: 80px;
+  background-color: darkred;
+  display: inline-block;
+}
+
+
+.n-i
+{
+  width: 29%;
+  height: 80px;
+  background-color: darkslateblue;
+  display: inline-block;
+}
+
+
+.gr
+{
+  width: 100%;
+  height: fit-content;
+  margin-top: 15px;
+ 
+}
+
+.g1
+{
+  width: 100%;
+  height: fit-content;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+
+  display: inline-block;
+}
+
+
+.g2
+{
+  width: 100%;
+  height: fit-content;
+  border: #a7a7a7 solid 1px;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+
+.g1-c
+{
+  width: 100%;
+  height: 150px;
+ 
+}
+
+.g2-c
+{
+  width: 100%;
+  height: 150px;
+ 
+}
+
+}

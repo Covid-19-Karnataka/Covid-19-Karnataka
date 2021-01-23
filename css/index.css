@@ -1,0 +1,647 @@
+body
+{
+  background-color: #FFFEFE;
+  margin: 0px;
+}
+
+
+.main-section
+{
+  width: 96%;
+  height: fit-content;
+  margin: auto;
+  margin-top: 20px;
+ 
+}
+
+.d-main
+{
+  width: 100%;
+  height: fit-content;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.d1
+{
+  width: 39%;
+  height: 140px;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+
+  display: inline-block;
+}
+
+.d1-sub
+{
+  width: 98%;
+  height: auto;
+  margin: auto;
+
+}
+
+.d2
+{
+  width: 29%;
+  height: 140px;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.d3
+{
+  width: 29%;
+  height: 140px;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+
+.flag
+{
+  width: 100%;
+  height: fit-content;
+  margin: 10px;
+
+}
+
+.m-sec-title
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 800;
+  margin: auto;
+}
+
+
+.m-sec-time
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+  margin: auto;
+  font-size: small;
+  color: rgb(112, 112, 112);
+}
+
+.map-name-flag
+{
+  height: 30px;
+  display: inline-block;
+  width: 40px;
+}
+
+
+.map-text
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #333;
+  font-size: medium;
+  display: inline-block;
+  font-weight: 600;
+  margin: auto;
+  margin-left: 10px;
+  line-height: 1px;
+  
+}
+
+
+
+
+.total-cou
+{
+  width: 97%;
+  margin: auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+
+.tb1
+{
+  width: 30%;
+  height: 100%;
+  display: inline-block;
+ 
+}
+
+.tb7
+{
+  width: 70%;
+  margin: auto;
+}
+
+
+.sb1
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgb(212, 7, 7);
+  font-size: x-large;
+  font-weight: 800;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+
+.sb2
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: black;
+  font-size: 10pt;
+  font-weight: 600;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+.sb3
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color:rgb(212, 7, 7);
+  font-size: x-small;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+
+.sb4
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color:rgb(1, 116, 54);
+  font-size: x-large;
+  font-weight: 800;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+
+.sb5
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: black;
+  font-size: 10pt;
+  font-weight: 600;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+.sb6
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color:rgb(1, 116, 54);
+  font-size: x-small;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+
+.sb7
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgb(131, 131, 131);
+  font-size: x-large;
+  font-weight: 800;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+
+.sb8
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: black;
+  font-size: 10pt;
+  font-weight: 600;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+.sb9
+{
+  font-family: 'IBM Plex Sans', sans-serif;
+  color:rgb(131, 131, 131);
+  font-size: x-small;
+  line-height: normal;
+  margin: auto;
+  text-align: center;
+}
+
+.rate
+{
+  width: 100%;
+  height: 100px;
+  margin: auto;
+}
+
+.cvy
+{margin-top: 20px;}
+
+
+
+.n-text
+{
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgb(0, 125, 134);
+  font-size: large;
+  margin-bottom: 0;
+  display: block;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.ns
+{
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+}
+
+
+.nlist
+{
+  width: 59%;
+  height: 260px;
+  background-color: crimson;
+  display: inline-block;
+}
+
+.slist
+{
+  width: 39%;
+  height: 260px;
+  background-color: darkgoldenrod;
+  display: inline-block;
+}
+
+.d21
+{
+  width: 63%;
+  height: fit-content;
+
+  display: inline-block;
+}
+
+
+.d23
+{
+  width: 34%;
+  height: fit-content;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.ind
+{
+  width: 90%;
+  margin: 15px;
+}
+
+
+.ind-total-cou
+{
+  width: 97%;
+  margin: auto;
+  margin-top: 20px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.n-t
+{
+  width: 80%;
+  height: 80px;
+  background-color: darkred;
+  display: inline-block;
+}
+
+
+.n-i
+{
+  width: 15%;
+  height: 80px;
+  background-color: darkslateblue;
+  display: inline-block;
+}
+
+
+.news-headline
+{
+  font-size: large;
+  font-weight: 600;
+  line-height: 1;
+  margin: auto;
+  vertical-align: top;
+  width: 100%;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.n-main
+{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.n1
+{
+  width: 100%;
+  height: fit-content;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+  margin-bottom:15px;
+  display: inline-block;
+  padding:10px;
+  
+}
+
+
+.gr
+{
+  width: 100%;
+  height: fit-content;
+  margin-top: 15px;
+  justify-content: space-between;
+ 
+}
+
+.g1
+{
+  width: 49%;
+  height: fit-content;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+
+  display: inline-block;
+}
+
+
+.g2
+{
+  width: 49%;
+  height: fit-content;
+  border: #a7a7a7 solid 1px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.g1-c
+{
+  width: 100%;
+  height: 300px;
+
+}
+
+
+.g2-c
+{
+  width: 100%;
+  height: 300px;
+
+}
+
+.nf
+{
+  width: 98%;
+  height:fit-content;
+  margin: auto;
+  
+}
+
+.nc
+{
+  width:70%;
+  height:fit-content;
+  display: inline-block;
+  
+
+}
+.ni
+{
+  width:29%;
+  vertical-align: top;
+  text-align: right;
+  height:fit-content;
+  display: inline-block;
+ 
+}
+
+.nc2
+{
+  width:100%;
+  height:fit-content;
+  display: inline-block;
+  
+
+}
+.ni2
+{
+  width:0%;
+  vertical-align: top;
+  text-align: right;
+  height:fit-content;
+  display: inline-block;
+ 
+}
+
+
+.ntitle
+{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+
+}
+
+
+.news-data
+{
+  vertical-align:top;
+  display: inline-block;
+  width: 75%;
+  background-color:brown;
+  height: fit-content;
+}
+.htitle
+{
+  font-size: large;
+  font-weight: 600;
+  line-height: 1;
+  margin: auto;
+  line-height: auto;
+  font-family: 'Roboto', sans-serif;
+}
+.news-image
+{
+  display: inline-block;
+  width: 24%;
+  text-align: end;
+}
+
+.section-spacing
+{
+  margin: auto;
+  width: 98%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.news-meta
+{
+  font-family: 'Roboto', sans-serif;
+  font-size: smaller;
+  font-weight: 400;
+  color: #707070;
+}
+
+.news-description
+{
+  padding-top: 20px;
+  height: fit-content;
+  font-family: 'Roboto', sans-serif;
+  font-size: medium;
+  color: #000;
+}
+
+.hmeta
+{
+  font-family: 'Roboto', sans-serif;
+font-size: small;
+color: grey;
+}
+
+.hdesc
+{
+font-family: 'Roboto', sans-serif;
+font-size: medium;
+color: black;
+margin:0;
+margin-top:10px;
+margin-bottom: 10px;
+}
+
+
+.nlink
+{
+ 
+  font-size: medium;
+  font-weight: 600;
+  color: rgb(13, 55, 243);
+  cursor: pointer;
+  
+}
+
+
+.nimg
+{
+
+  width: auto;
+  height: 100px;
+  vertical-align: right;
+}
+
+
+.live-div
+{
+  width:100%;
+  height:fit-content;
+  text-align: right;
+  background-color: aqua;
+  margin-bottom: 10px;
+}
+
+.live-gif
+{
+  width:120px;
+  height:120px;
+}
+
+.top-news
+{
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  text-align: right;
+  height:fit-content;
+  /* background-color:rgb(230, 230, 230); */
+}
+
+.live
+{
+  width: 8%;
+  height:fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 1;
+  display:inline-block;
+  background-color: rgb(13, 88, 175);
+}
+
+
+
+.m-news
+{
+
+  width:90%;
+  margin:auto;
+  display:inline-block;
+
+}
+
+.live-head
+{
+  width:100%;
+  text-align: center;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  display: inline-block;
+  font-weight: 600;   
+  margin: auto;
+}
+
+
+.n-m
+{
+font-family:'Segoe UI', Tahoma, Verdana, sans-serif;
+font-size:medium;
+font-weight: 600;
+}
+
+.not
+{
+  text-align: right;
+}
+
+.b-size
+{
+    width: 28px;
+    cursor: pointer;
+    height:28px;
+    margin-bottom: 10px;
+}
+
+
+
+.dropdown
+{
+  position: absolute;
+  width:30%;
+  right: 25px;
+  z-index: -1;
+  margin-right:15px;
+  margin: auto;
+  height:180px;
+  background-color: blue;
+}

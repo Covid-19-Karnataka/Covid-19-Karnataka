@@ -1,0 +1,51 @@
+@media all and (max-width: 600px) 
+{
+.android-header .mdl-layout__drawer-button {
+  background: transparent;
+  visibility: visible;
+  color: #767777;
+}
+
+
+.cvd-section
+{
+    width:100%;
+    height:fit-content;
+    margin:auto;
+  
+}
+
+
+.cvdtit
+{
+    margin:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:large;
+    color:white;
+    font-weight:600;
+}
+
+.mdesc-secs
+{
+    width:0%;
+    height: fit-content;
+    display: none;
+}
+
+.mmap-secs
+{
+    width:100%;
+}
+
+.cmc-menu
+{
+    width:0%;
+    display: none;
+}
+
+
+.cmc
+{
+    width:100%;
+}
+}

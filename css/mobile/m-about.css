@@ -1,0 +1,78 @@
+@media all and (max-width: 600px) 
+{
+.android-header .mdl-layout__drawer-button {
+  background: transparent;
+  visibility: visible;
+  color: #767777;
+  
+}
+
+.allimage
+{
+
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+  height:fit-content;
+  display: block;
+  margin-top: 20px;
+}
+
+.p1
+{
+  width:100%;
+  margin-top: 20px;
+  height:fit-content;
+}
+
+
+.contactus
+{
+  width:97%;
+  margin: auto;
+  padding: 20px;
+  display: block;
+}
+
+
+.feedback
+{
+    width:100%;
+    padding: 25px;
+    display: block;
+}
+
+.feed_footer
+{
+  margin-top: 20px;
+  background-color:rgb(58, 84, 204);
+  display: block;
+}
+
+.mdiv
+{
+    width:100%;
+    display: block;
+}
+
+.l1
+{
+    width:100%;
+    display: block;
+}
+
+.l2
+{
+    width:100%;
+    display: block;
+}
+
+
+.m-t
+{
+  margin-top:15px;
+}
+
+}
+
+

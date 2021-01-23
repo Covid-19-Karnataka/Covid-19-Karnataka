@@ -1,0 +1,89 @@
+
+@media all and (max-width: 600px) 
+{
+.android-header .mdl-layout__drawer-button {
+  background: transparent;
+  visibility: visible;
+  color: #767777;
+}
+
+.any-section
+{
+    width: 100%;
+   
+}
+
+
+.st-name
+{
+    padding-left: 18px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#0089d8;
+}
+
+
+.vc
+{
+ height: fit-content;
+  margin-bottom: 10px;
+  position: absolute;
+ 
+}
+
+.simg
+{
+    display:none;
+}
+
+.source
+
+{
+    padding-left: 18px;
+    padding-top: 15px;
+    margin: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(199, 23, 0);
+}
+
+.amenu
+{
+    width: 0%;
+    display: none;
+    
+}
+.cp
+{
+    width:97%;
+    margin: auto;
+   
+}
+
+.acontent
+{
+    width: 100%;
+    display: inline;
+    height: fit-content;
+}
+
+.mdesc-sec
+{
+    width:100%;
+
+}
+
+.mmap-sec
+{
+    margin-top: 20px;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+    width:100%;
+    
+}
+
+}

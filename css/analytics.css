@@ -1,0 +1,222 @@
+.body
+{
+    background-color: black;
+}
+
+.any-section
+{
+    width: 100%;
+    margin: auto;
+}
+
+.aparent
+{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.amenu
+{
+    width: 18%;
+    height: fit-content;
+    display: inline-block;
+    background-color: white;
+    margin-top: 15px;
+  
+}
+
+
+.acontent
+{
+    width: 82%;
+    height: fit-content;
+    display: inline-block;
+    background-color: rgb(230, 247, 255);
+    
+}
+
+.a-nav
+{
+    margin-top: 25px;
+    margin: auto;
+    padding-left: 40px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
+}
+
+.cparent
+{
+    width: 95%;
+    height: fit-content;
+    margin: auto;
+}
+.ahead
+{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    font-weight: 400;
+    color: black;
+    margin-top: 25px;
+}
+
+.cp
+{
+    width:100%;
+    text-align: center;
+}
+
+.mdesc-sec
+{
+    width:59%;
+    height: fit-content;
+    display: inline-block;
+
+
+}
+
+.mmap-sec
+{
+    width:39%;
+    height: fit-content;
+    display: inline-block;
+    
+}
+
+.mapdiv
+{
+    width: 100%;
+
+    height: fit-content;
+}
+
+.box-container
+{
+        margin: 0px auto 20px auto;
+        text-align: left;
+}
+
+
+.boxContainer, .mdesc-sec, .mmap-sec 
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mapdiv
+{
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: auto;
+
+}
+
+.state-svg
+{
+    width: 100%;
+    max-height: 200px;
+}
+
+.map
+{
+    width: 100%;
+    height:500px;
+}
+
+
+.cls-1:hover {
+    fill: #007dc5 ;
+    stroke:#007dc5;
+  }
+
+
+.acard
+{
+    width:90%;
+    margin:auto;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #dfdfdf;
+    padding:10px;
+}
+
+.manav
+{
+    padding-left: 18px;
+    padding-top: 10px;
+    margin: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: large;
+    font-weight: 400;
+    cursor: pointer;
+    color: black;
+}
+
+
+.source
+
+{
+    padding-left: 18px;
+    padding-top: 10px;
+    margin: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(199, 23, 0);
+}
+
+.st-name
+{
+    padding-left: 18px;
+    margin: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:#0089d8;
+}
+
+.st-name-small
+{
+    padding-left: 18px;
+    margin: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: small;
+    font-weight: 600;
+    color:#0089d8;
+}
+
+
+.simg
+{
+    width:12px;
+    height:12px;
+}
+
+.sc
+{
+    width:100%;
+    position: relative;
+    height:fit-content;
+
+}
+
+.vc
+{
+  margin: 0;
+  position: absolute;
+}
+
+
+
+
+
