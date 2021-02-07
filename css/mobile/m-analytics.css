@@ -86,4 +86,20 @@
     
 }
 
+.sc
+{
+    width:100%;
+    position: relative;
+    height:fit-content;
+
+}
+
+.st-div
+{
+    width:100%;
+    height:fit-content;
+    padding-top: 5px;
+}
+
+
 }
