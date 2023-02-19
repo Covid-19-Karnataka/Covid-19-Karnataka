@@ -3,17 +3,6 @@ var database = firebase.database();
 console.log(id);
 document.getElementById("fsubmitbtn").disabled=true;
 
-// var ip="";
-
-// var ipad = {
-//     "crossDomain": true,
-//     "url": "https://api.ipify.org/?format=json",
-//     "type": "GET"
-// }
-
-// $.ajax(ipad).done(function (response){ip = response.ip;});
-
-
 function sendotp()
 {
     console.log("working");
