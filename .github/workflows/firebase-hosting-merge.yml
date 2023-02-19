@@ -13,6 +13,7 @@ jobs:
       - uses: actions/checkout@v3
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
+          entrypoint: ./
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CORONA_KARNATAKA_2020 }}'
           channelId: live
