@@ -7,16 +7,20 @@ var active;
 var requestOptions1 = {
   "async": true,
   "crossDomain": true,
-  "url": "https://api.covid19india.org/v4/data.json",
+  "url": "https://corona-karnataka-2020.firebaseio.com/stats.json",
   "method": "GET"
 }
 $.ajax(requestOptions1).done(function (response) {
-  var res = response.KA;
-  var faltity = res.total.deceased;
-  var recovery = res.total.recovered;
-  var totalconfirmed = res.total.confirmed;
-  var active = totalconfirmed-recovery-faltity;
 
+  resLength = Object.keys(response).length;
+  var keys = Object.keys(response);
+  var latest = keys[resLength-1];
+  var res = response[latest];
+
+  var faltity = res.total_deaths;
+  var recovery = res.total_discharge;
+  var totalconfirmed = res.total_positive;
+  var active = totalconfirmed-recovery-faltity;
 
   google.charts.load("current", {packages:["corechart"]});
       google.charts.setOnLoadCallback(drawChart);
@@ -47,23 +51,13 @@ $.ajax(requestOptions1).done(function (response) {
 
 });
 
-
-
-
-
-
-
-
-    
-
-
     grab();
 
     function grab() {
       /* Promise to make sure data loads */
       return new Promise((resolve, reject) => {
           $.ajax({
-              url: "https://api.covid19india.org/states_daily.json",
+              url: "https://corona-karnataka-2020.firebaseio.com/stats.json",
               method: "GET",
               dataType: 'JSON',
               success: function(data) {
@@ -80,9 +74,11 @@ $.ajax(requestOptions1).done(function (response) {
   $(document).ready(function() {
       grab().then((data) => {
         //   console.log('Recieved our data', data);
-          var path = data.states_daily
-          var leng= Object.keys(path).length;
+          // var path = data.states_daily
+          // var leng= Object.keys(path).length;
         //   console.log(leng);
+          var leng = Object.keys(data).length;
+          var allDAtes = Object.keys(data);
           let regions = [];
           let value = [];
 
@@ -92,8 +88,8 @@ $.ajax(requestOptions1).done(function (response) {
             for(i=0; i<leng; i+=3)
             {
 
-                date = data.states_daily[i].date;
-                active = data.states_daily[i].ka;
+                date = allDAtes[i];
+                active = data[date].today_positive;
                 regions.push(date);
                 value.push(active)
             }
@@ -147,9 +143,8 @@ $.ajax(requestOptions1).done(function (response) {
   $(document).ready(function() {
     grab().then((data) => {
       //   console.log('Recieved our data', data);
-        var path = data.states_daily
-        var leng= Object.keys(path).length;
-       
+        var leng = Object.keys(data).length;
+        var allDAtes = Object.keys(data);
         let regions = [];
         let value = [];
 
@@ -159,10 +154,10 @@ $.ajax(requestOptions1).done(function (response) {
           for(i=2; i<leng; i+=3)
           {
 
-              date = data.states_daily[i].date;
-              death = data.states_daily[i].ka;
-              regions.push(date);
-              value.push(death)
+            date = allDAtes[i];
+            active = data[date].today_deaths;
+            regions.push(date);
+            value.push(active)
           }
 
          

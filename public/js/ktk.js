@@ -3,26 +3,30 @@ $('#districts').find('tbody').html('');
 var requestOptions1 = {
     "async": true,
     "crossDomain": true,
-    "url": "https://api.covid19india.org/state_district_wise.json",
+    "url": "https://corona-karnataka-2020.firebaseio.com/stats.json",
     "method": "GET"
 }
 
 $.ajax(requestOptions1).done(function (response) 
 {
 
-    var path = response.Karnataka.districtData;
-    var leng= Object.keys(path).length;
-    console.log(leng);
+    
+    var resLength = Object.keys(response).length;
+    var keys = Object.keys(response);
+    var latest = keys[resLength-1];
+    var res = response[latest];
+    var dist = res.KA;
+    var leng = Object.keys(dist).length-1;
+    var path = Object.keys(dist);
 
 
     for (i=0; i<leng; i++)
     {
-
-        var keys = Object.keys(path);
-        var distname = keys[i];
-        var confirmed = path[distname].confirmed;
-        var recovered = path[distname].recovered;
-        var death = path[distname].deceased;
+        var distname = path[i];
+        var confirmed = dist[distname].today_positive;
+        // console.log(confirmed)
+        var recovered = dist[distname].today_discharge;
+        var death = dist[distname].today_deaths;
     
         
 
