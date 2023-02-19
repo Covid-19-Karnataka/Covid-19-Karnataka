@@ -2,7 +2,7 @@
 var requestOptions1 = {
     "async": true,
     "crossDomain": true,
-    "url": "https://api.covid19india.org/state_district_wise.json",
+    "url": "https://corona-karnataka-2020.firebaseio.com/stats.json",
     "method": "GET"
 }
 
@@ -12,8 +12,12 @@ document.getElementById("Layer_2").onmouseover = function()
 {
 $.ajax(requestOptions1).done(function (response) 
 {
-    var path = response.Karnataka.districtData.Bidar.active;
-    var value = path;
+    var resLength = Object.keys(response).length;
+    var keys = Object.keys(response);
+    var latest = keys[resLength-1];
+    var path = response[latest].KA.Chikkaballapura;
+    console.log(path)
+    var value = path.total_positive-path.total_discharge-path.total_deaths;
     document.getElementById("state_name").innerText = "BIDAR";
     document.getElementById("active-name").innerText = "Active";
     const obj = document.getElementById("q");
@@ -25,8 +29,8 @@ document.getElementById("Layer_3").onmouseover = function()
 {
 $.ajax(requestOptions1).done(function (response) 
 {
-    var path = response.Karnataka.districtData.Kalaburagi.active;
-    var value = path;
+    // var path = response.Karnataka.districtData.Kalaburagi.active;
+    var value = 500;
     document.getElementById("state_name").innerText = "Kalaburagi";
     document.getElementById("active-name").innerText = "Active";
     const obj = document.getElementById("q");
