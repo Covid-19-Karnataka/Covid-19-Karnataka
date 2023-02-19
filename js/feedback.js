@@ -36,7 +36,7 @@ function sendotp()
 
         var requestOptions1 = {
             "crossDomain": true,
-            "url": "https://corona-karnataka-2020.appspot.com/sendotp?phonenumber="+pno+"&channel=sms",
+            "url": "https://api.covid19karnataka.in/"+pno",
             "type": "GET"
         }
         $.ajax(requestOptions1)
@@ -78,7 +78,7 @@ function verifyotp()
         var requestOptions1 = {
             "async": true,
             "crossDomain": true,
-            "url": "https://corona-karnataka-2020.appspot.com/verify?phonenumber="+pno+"&code="+otp,
+            "url": "https://https://api.covid19karnataka.in/"+pno+"/"+otp",
             "method": "GET"
         }
         $.ajax(requestOptions1).done(function (response) 
