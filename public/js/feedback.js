@@ -23,9 +23,11 @@ function sendotp()
         let userRef = this.database.ref('users/');
         userRef.child(id).update({'otp':"not verified"});
 
+        var endurl = "https://api.covid19karnataka.in/"+pno;
+
         var requestOptions1 = {
             "crossDomain": true,
-            "url": "https://api.covid19karnataka.in/"+pno",
+            "url": endurl,
             "type": "GET"
         }
         $.ajax(requestOptions1)
@@ -62,12 +64,15 @@ function verifyotp()
     var pno= document.getElementById("phonenumber").value;
     var feed_name = document.getElementById("feed_name").value;
     var otp = document.getElementById("otp").value; 
+
+    var endurl = "https://api.covid19karnataka.in/"+pno+"/"+otp;
+
     if (otp.length==6 && !isNaN(otp))
     {
         var requestOptions1 = {
             "async": true,
             "crossDomain": true,
-            "url": "https://https://api.covid19karnataka.in/"+pno+"/"+otp",
+            "url": endurl,
             "method": "GET"
         }
         $.ajax(requestOptions1).done(function (response) 
