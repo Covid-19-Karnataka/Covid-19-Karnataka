@@ -43,5 +43,5 @@ jobs:
           access-key: ${{ secrets.JSCRAMBLER_ACCESS_KEY }}          # This value can be found in your Jscrambler account
           jscrambler-config-path: jscrambler.json                   # Download from your Jscrambler account
           files-src: |                                              # List of Files to be protected
-            dist/**/*
+            public/js/*
           files-dest: .
