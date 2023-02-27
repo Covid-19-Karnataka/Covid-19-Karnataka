@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Install dependencies
         run: 
-          npm i
+          npm i --package-lock-only
