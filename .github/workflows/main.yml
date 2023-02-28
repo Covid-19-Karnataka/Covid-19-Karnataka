@@ -14,4 +14,4 @@ jobs:
       run: mkdir -p dist
 
     - name: Minify JavaScript files
-      run: npm uglifyjs public/js/*.js -o dist/app.min.js
+      run: npx uglifyjs public/js/*.js -o dist/app.min.js
