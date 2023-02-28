@@ -20,4 +20,4 @@ jobs:
         run: test -d dist || mkdir dist
 
       - name: Build
-        run: npx uglifyjs public/js/source/config.js -o dist/file.min.js
+        run: npx uglifyjs public/js/config.js -o dist/file.min.js
