@@ -1,4 +1,4 @@
-name: Obfuscate JavaScript Files
+name: Build and Compress JS Files
 on: push
 
 jobs:
@@ -6,14 +6,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
-      
-    - name: Create Dist Folder
-      run: 
-          mkdir -p dist
+      uses: actions/checkout@v2
 
-    - name: Install dependencies
+    - name: Create Dist Directory
+      run: mkdir -p dist
+
+    - name: Display Dist Directory Path
+      run: echo "Dist directory path: $PWD/dist"
+
+    - name: Install Dependencies
       run: npm install
 
-    - name: Obfuscate JavaScript files
-      run: npx uglify-js --output dist --compress --mangle -- public/js/*.js
+    - name: Build and Compress JS Files
+      run: |
+        npm run build
+        uglifyjs src/*.js -o dist/bundle.min.js
+
+    - name: List Files in Dist Directory
+      run: ls -l dist
