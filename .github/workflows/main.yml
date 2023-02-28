@@ -25,7 +25,7 @@ jobs:
         run: echo "::set-output name=build_number::$((${{ steps.get_build_number.outputs.build_number }} + 1))"
 
       - name: Update HTML file with new build number
-        run: sed -i 's/data-build-number="[^"]*"/data-build-number="${{ steps.increment_build_number.outputs.build_number }}"/' public/about.html
+        run: sed -i 's/Version = 1.0."[^"]*"/data-build-number="${{ steps.increment_build_number.outputs.build_number }}"/' public/about.html
 
       - name: Commit changes
         run: |
