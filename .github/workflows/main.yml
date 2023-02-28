@@ -8,10 +8,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Create dist directory
       run: mkdir -p dist
 
     - name: Minify JavaScript files
-      run: uglifyjs src/*.js -o dist/app.min.js
+      run: uglifyjs public/js/*.js -o dist/app.min.js
