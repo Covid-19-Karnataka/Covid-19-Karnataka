@@ -16,6 +16,9 @@ jobs:
 
     - name: Install npm@5
       run: npm install -g npm@5
+    
+    - name: Install jscrambler
+      run: npm install jscrambler
 
     - name: Build and test
       run: |
