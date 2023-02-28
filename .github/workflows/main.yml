@@ -10,7 +10,6 @@ jobs:
       
     - name: Create Dist Folder
       run: 
-          cd
           mkdir -p dist
 
     - name: Install dependencies
