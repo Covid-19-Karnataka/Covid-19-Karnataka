@@ -37,6 +37,6 @@ jobs:
 
     - name: Build and test
       run: |
-        npm ci
+        npm install
         npm run build
         npm test
