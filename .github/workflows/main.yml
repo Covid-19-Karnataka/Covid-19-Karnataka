@@ -10,13 +10,13 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Create dist folder
-      run: mkdir -p build/dist
+    - name: Create build folder
+      run: mkdir build
 
-    - name: Check if dist folder exists
+    - name: Commit build folder
       run: |
-        if [ -d "build/dist" ]; then
-          echo "Folder exists"
-        else
-          echo "Folder does not exist"
-        fi
+        git config --local user.email "actions@github.com"
+        git config --local user.name "GitHub Actions"
+        git add build
+        git commit -m "Add build folder"
+        git push
