@@ -1,41 +1,15 @@
-name: CI
-
-on: [push]
+name: Obfuscate JavaScript Files
+on: push
 
 jobs:
-  install:
-    
+  build:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v3
-
-    - name: Install Node.js and npm
-      uses: actions/setup-node@v3
-      with:
-        node-version: '9.x'
+    - name: Checkout code
+      uses: actions/checkout@v2
 
     - name: Install dependencies
       run: npm install
 
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v3
-
-    - name: Use Node.js 9.x
-      uses: actions/setup-node@v3
-      with:
-        node-version: '9.x'
-
-    - name: Install npm@5
-      run: npm install -g npm@5
-    
-    - name: Install jscrambler
-      run: npm install jscrambler
-
-    - name: Build and test
-      run: |
-        npm ci
-        npm run compile
+    - name: Obfuscate JavaScript files
+      run: npx uglify-js --output dist --compress --mangle -- js/*.js
