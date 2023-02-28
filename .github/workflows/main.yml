@@ -1,17 +1,23 @@
-name: My Workflow
+name: UglifyJS Example
 
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Create dist directory
-      run: mkdir -p dist
+      - name: Install UglifyJS
+        run: npm install uglify-js
 
-    - name: Minify JavaScript files
-      run: npx uglifyjs public/js/*.js -o dist/app.min.js
+      - name: Check for dist directory
+        run: test -d dist || mkdir dist
+
+      - name: Build
+        run: npx uglifyjs public/js/source/config.js -o dist/file.min.js
