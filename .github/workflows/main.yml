@@ -1,0 +1,22 @@
+name: My Workflow
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Create dist folder
+      run: mkdir -p build/dist
+
+    - name: Check if dist folder exists
+      run: |
+        if [ -d "build/dist" ]; then
+          echo "Folder exists"
+        else
+          echo "Folder does not exist"
+        fi
