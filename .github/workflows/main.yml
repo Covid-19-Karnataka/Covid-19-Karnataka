@@ -34,9 +34,9 @@ jobs:
           git config user.email "actions@github.com"
           git commit -a -m "Increment build number to ${{ steps.increment_build_number.outputs.build_number }}"
           git push
-      
-      - uses: actions/checkout@v3
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+          
+      - name : Deploying to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           entrypoint: ./
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
