@@ -1,22 +1,18 @@
-name: My Workflow
-
+name: Obfuscate JavaScript Files
 on: push
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v2
 
-    - name: Create build folder
-      run: mkdir testbuild
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Create folder
+      run: mkdir -p dist
 
-    - name: Commit build folder
-      run: |
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git add testbuild
-        git commit -m "Add build folder"
-        git push
+    - name: Obfuscate JavaScript files
+      run: npx uglify-js --output dist --compress --mangle -- public/js/*.js
