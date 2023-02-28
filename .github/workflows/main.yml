@@ -9,7 +9,9 @@ jobs:
       uses: actions/checkout@v3
       
     - name: Create Dist Folder
-      run: mkdir -v dist
+      run: 
+          mkdir -p dist
+          ls
 
     - name: Install dependencies
       run: npm install
