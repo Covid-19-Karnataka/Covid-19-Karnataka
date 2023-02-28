@@ -18,7 +18,7 @@ jobs:
 
       - name: Get current build number
         id: get_build_number
-        run: echo "::set-output name=build_number::$(grep -oP 'Version:1.0."\K\d+' public/about.html)"
+        run: echo "::set-output name=build_number::$(grep -oP 'Version:1.0.\K\d+' public/about.html)"
 
       - name: Increment build number
         id: increment_build_number
